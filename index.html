@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Introduction</title>
+</head>
+<body>
+    <script>
+        // Part 1
+        console.log(23 + 97)
+
+        // Part 2
+        let x = 0;
+        for (let i = 1; i < 7; i++) x += i;
+        console.log(x);
+
+        // Part 3
+        console.log((4 + 6 + 9) / 77);
+
+        // Part 4
+        let a = 10;
+        console.log(a);
+
+        // Part 5
+        let max = 57;
+        let actual = max - 13;
+        let percentage = actual / max;
+    </script>
+
+    <button>Press me</button>
+    <script>
+        const button = document.querySelector("button");
+
+        function greet() {
+            const name = prompt("What is your name?");
+            alert(`Hello ${name}, nice to see you!`);
+        }
+
+        button.addEventListener("click", greet);
+    </script>
+
+    <input id = "textBox" type = "text" />
+    <div id = "output"></div>
+
+    <script>
+        const textBox = document.querySelector("#textBox");
+        const output = document.querySelector("#output");
+
+        textBox.addEventListener("keydown", (event) => {
+        output.textContent = `You pressed "${event.key}".`;
+        });
+    </script>
+
+    <script>
+        function add7(x) {
+            return x + 7;
+        }
+
+        function multiply(x, y) {
+            return x * y;
+        }
+
+        function capitalise(s) {
+            return s[0].toUpperCase() + s.substring(1);
+        }
+
+        function lastLetter(s) {
+            return s.charAt(s.length - 1);
+        }
+
+        console.log(add7(8));
+        console.log(multiply(6, 7));
+        console.log(capitalise("lowercase"));
+        console.log(capitalise("UPPERCASE"));
+        console.log(capitalise("BoTH"));
+        console.log(lastLetter("lowercase"));
+        console.log(lastLetter("UPPERCASE"));
+        console.log(lastLetter("BoTH"));
+    </script>
+</body>
+</html>
